@@ -2,4 +2,4 @@
 // 운영 주소가 고정되어 있다면 아래 문자열을 변경해 GitHub에 업로드하세요.
 export const DEFAULT_API_URL = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
   ? 'http://127.0.0.1:8787'
-  : 'https://YOUR-SENIOR-TV-API.workers.dev';
+  : 'https://senior-tv-api.sss-education-tv.workers.dev';
