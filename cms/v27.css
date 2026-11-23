@@ -1,0 +1,17 @@
+/* V2.7 playback analytics: desktop and mobile. */
+.analytics-filter{display:grid;grid-template-columns:repeat(5,minmax(110px,1fr)) auto;gap:12px;align-items:end}
+.analytics-filter .field{min-width:0;margin:0}
+.analytics-filter .field label{display:block;margin-bottom:6px}
+.analytics-filter .field select,.analytics-filter .field input{width:100%;min-width:0}
+.analytics-filter>button{min-height:44px}
+.analytics-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.analytics-grid>.card{margin-top:14px}
+.analysis-tip{margin:12px 0;padding:13px 16px;border:1px solid #cfe0f3;background:#eef5fd;border-radius:10px;color:#284a73;font-size:13px}
+.usage-row{display:grid;grid-template-columns:minmax(70px,110px) minmax(0,1fr) 60px;gap:10px;align-items:center;margin:10px 0;font-size:12px;color:#344962}
+.usage-row b{text-align:right;font-variant-numeric:tabular-nums}
+.usage-meter{position:relative;height:12px;border-radius:7px;background:#eaf0f7;overflow:hidden}
+.usage-bar{display:block;height:100%;min-width:2px;border-radius:7px;background:linear-gradient(90deg,#3269ba,#45a5bf)}
+.analytics-stats .stat{min-width:0}
+@media(max-width:1100px){.analytics-filter{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.analytics-filter{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.analytics-filter>button{grid-column:1/-1}.analytics-grid{grid-template-columns:1fr}.usage-row{grid-template-columns:70px minmax(0,1fr) 52px;gap:7px}.analysis-tip{font-size:12px}}
+@media(max-width:360px){.analytics-filter{grid-template-columns:1fr}}
